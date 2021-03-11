@@ -133,7 +133,7 @@ class PR_DHL_WC {
 		// DHL eCommerce
 		$this->define( 'PR_DHL_REST_AUTH_URL', 'https://api.dhlecommerce.com' );
 		$this->define( 'PR_DHL_REST_AUTH_URL_QA', 'https://api-qa.dhlecommerce.com' );
-		$this->define( 'PR_DHL_ECOMM_TRACKING_URL', 'https://webtrack-sandbox.dhlecs.com/?trackingnumber=' );
+		$this->define( 'PR_DHL_ECOMM_TRACKING_URL', 'https://webtrack.dhlecs.com/?trackingnumber=' );
 		
 		// DHL eCS Asia tracking link. Sandbox => https://preprod2.dhlecommerce.dhl.com/track/?ref=
 		$this->define( 'PR_DHL_ECS_ASIA_SANDBOX_TRACKING_URL', 'https://sandbox.dhlecommerce.dhl.com/track/?locale=en&ref=' );
