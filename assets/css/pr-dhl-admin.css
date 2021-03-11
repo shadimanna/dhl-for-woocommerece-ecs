@@ -1,0 +1,99 @@
+.wc_dhl_error,
+.wc_dhl_delete #dhl_delete_label,
+.wc_dhl_delete #pr_dhl_dp_delete_label {
+	color: #a00;
+}
+
+span.wc_dhl_delete,
+span.wc_dhl_error {
+	float:right;
+}
+
+ul.wc_dhl_error{
+	list-style-type: disc;
+	padding-left:20px;
+}
+
+.dhl_connection_succeeded {
+	color: #008000;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.dhl_connection_error {
+	color: #a00;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#dhl_label_created {
+	width:7%;
+	/*text-align:center*/
+}
+
+#dhl-optin-notice {
+	padding: 8px 15px;
+}
+
+#pr_dhl_create_order {
+	float: right;
+}
+
+#pr_dhl_order_items_table a.pr_dhl_order_remove_item {
+	outline: 0;
+	box-shadow: 0 0 0 transparent;
+}
+#pr_dhl_order_items_table a.pr_dhl_order_remove_item[disabled] {
+	color: #777;
+	pointer-events: none;
+}
+
+#pr_dhl_order_gen_label_message,
+#pr_dhl_reset_order,
+#pr_dhl_dp_error {
+	display: none;
+}
+
+#pr_dhl_dp_error {
+    color: red;
+}
+
+#woocommerce-shipment-dhl-label,
+#woocommerce-dhl-dp-order {
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(50%,#fc0),to(rgba(255,204,0,0)));
+	background-image: linear-gradient(#fc0 50%,rgba(255,204,0,0));
+	background-size: auto 36px;
+	background-repeat:repeat-x;
+}
+
+
+.dhl-total-packages #pr_dhl_total_packages {
+  width: 100px !important;
+  margin-top: -7px;
+  margin-left: 5px;
+}
+
+p.dhl-total-packages > label {
+  padding-bottom: 10px !important;
+} 
+
+.package_header_field,
+.package_item_field {
+  display: inline-block;
+  width: 45px !important;
+}
+
+.package_header_field.first,
+.package_item_field.first {
+  width: 55px !important;
+}
+
+.package_item input {
+  width: 40px !important;
+
+.dhl-awb-filter-container{
+	clear:both;
+	margin-top:9px;
+	margin-bottom:9px;
+
+}

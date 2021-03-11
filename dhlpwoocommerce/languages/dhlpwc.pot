@@ -1,0 +1,1499 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-07-31 14:06+0200\n"
+"PO-Revision-Date: 2017-10-06 12:50+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;_n;_n:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: tests\n"
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:131
+msgid "Label created."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:133
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:256
+#, php-format
+msgid "Label could not be created."
+msgid_plural "%s labels failed to create."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:141
+#, php-format
+msgid "The API responded with [%1$s]: %2$s"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:167
+msgid "Label deleted."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:191
+msgid "Sent to printer successfully."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:193
+msgid "Failed to send to printer."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:217
+msgid "Label not found"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:222
+msgid "Label request not found"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:239
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:259
+msgid "List updated."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order-metabox.php:275
+msgid "DHL"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:68
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:115
+msgid "Delivery date"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:162
+#, php-format
+msgid "DHL - Create label (%s)"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:253
+#, php-format
+msgid "Label successfully created."
+msgid_plural "%s labels successfully created."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:273
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:388
+#, php-format
+msgid "%sDownload label%s For order: %s."
+msgid_plural "%sDownload labels%s For orders: %s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:283
+#, php-format
+msgid "%sPrint label%s For order: %s."
+msgid_plural "%sPrint labels%s For orders: %s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:303
+msgid "DHL - Download label"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:324
+msgid "DHL - Print label"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:366
+#, php-format
+msgid "Order processed."
+msgid_plural "%s orders processed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:369
+#, php-format
+msgid "Label sent to printer."
+msgid_plural "%s labels sent to printer."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:371
+msgid "Failed to print label."
+msgid_plural "Failed to print labels."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:410
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:127
+msgid "DHL label info"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-order.php:476
+msgid "Send to DHL ServicePoint"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-product.php:30
+msgid "Limit DHL methods"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-product.php:47
+msgid "Use control + click to add/remove single shipping methods"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:52
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:53
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:36
+msgid "DHL for WooCommerce"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:72
+msgid "Unknown tag"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:99
+msgid "Connection successful"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:99
+msgid "Authentication failed"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:114
+msgid "Printers found"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:114
+msgid "No printers found"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:129
+msgid "Activated bulk PDF download"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:129
+msgid ""
+"PDFMerger cannot be initiated. To use bulk download, please check and "
+"resolve any conflicting third plugins causing this issue."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:170
+msgid "Test connection and retrieve account data"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:171
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:174
+msgid "Please wait..."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:172
+msgid "Accounts found. Click to use."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:173
+msgid "Search for printers linked to account"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:175
+msgid "Printers found. Click to use."
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:176
+msgid ""
+"You need to check the same day delivery option to use this shipping "
+"method"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:177
+msgid ""
+"You need to check the no neighbours same day delivery option to use "
+"this shipping method"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:178
+msgid "You need to check this option to use the same day delivery"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:179
+msgid ""
+"You need to check this option to use the no neighbour same day delivery"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:271
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:280
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:283
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:286
+#, php-format
+msgid "Missing %1$s from %2$s"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:271
+msgid "Country / State"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:271
+msgid "General"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:280
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:216
+msgid "UserID"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:280
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:283
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:286
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:207
+msgid "Account details"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:283
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:221
+msgid "Key"
+msgstr ""
+
+#: includes/controller/admin/class-dhlpwc-controller-admin-settings.php:286
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:231
+msgid "AccountID"
+msgstr ""
+
+#: includes/controller/class-dhlpwc-controller-checkout.php:98
+msgid "Choose a DHL ServicePoint"
+msgstr ""
+
+#: includes/controller/class-dhlpwc-controller-checkout.php:102
+msgid ""
+"The DHL ServicePoint country cannot be different than the shipping "
+"address country."
+msgstr ""
+
+#: includes/controller/class-dhlpwc-controller-mail.php:52
+msgid "Selected delivery location"
+msgstr ""
+
+#: includes/controller/isolated/class-dhlpwc-controller-isolated-load-switcher.php:59
+#, php-format
+msgid ""
+"Were you looking to use DHL Parcel instead? %sClick here to switch%s "
+"(this will turn off Deutsche Post International)."
+msgstr ""
+
+#: includes/controller/isolated/class-dhlpwc-controller-isolated-load-switcher.php:62
+#, php-format
+msgid ""
+"Were you looking to use Deutsche Post International instead? %sClick "
+"here to switch%s (this will turn off DHL Parcel)."
+msgstr ""
+
+#: includes/model/logic/class-dhlpwc-model-logic-access-control-capabilities.php:79
+#: includes/model/logic/class-dhlpwc-model-logic-access-control-capabilities.php:104
+msgid "Missing shipping country code when checking for capabilities."
+msgstr ""
+
+#: includes/model/logic/class-dhlpwc-model-logic-access-control-capabilities.php:82
+#: includes/model/logic/class-dhlpwc-model-logic-access-control-capabilities.php:107
+msgid "Missing receiver country code when checking for capabilities."
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:137
+msgid "Weight"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:138
+msgid "Cart total"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:145
+msgid "Disable delivery option"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:146
+msgid "Change price to"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:147
+msgid "Add additional fee"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-condition-rule.php:148
+msgid "Add fee (keep repeating)"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-delivery-times.php:448
+msgid ""
+"Send\n"
+"ASAP"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-delivery-times.php:452
+msgid ""
+"Send\n"
+"tomorrow"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-delivery-times.php:466
+#, php-format
+msgid ""
+"Send in\n"
+"%s days"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-delivery-times.php:470
+msgid ""
+"Send\n"
+"today"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:134
+#: includes/model/service/class-dhlpwc-model-service-translation.php:35
+msgid "Reference"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:148
+#: includes/model/service/class-dhlpwc-model-service-translation.php:36
+msgid "Second reference"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:170
+msgid "In euros (€)"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:233
+msgid "No matching capabilities found."
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:296
+msgid "Download PDF label"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:303
+msgid "Print PDF label"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:310
+msgid "Follow track & trace"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:316
+msgid "Delete PDF label"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-label-metabox.php:323
+msgid "Show Label Request"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:149
+msgid "Distance"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:150
+msgid "Search"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:151
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:668
+msgid "Monday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:152
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:669
+msgid "Tuesday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:153
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:670
+msgid "Wednesday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:154
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:671
+msgid "Thursday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:155
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:672
+msgid "Friday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:156
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:673
+msgid "Saturday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:157
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:674
+msgid "Sunday"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:158
+msgid "Enter your postal code or city"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:159
+msgid "Closed from"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:160
+msgid "till"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-parcelshop.php:161
+msgid "and"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:55
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:59
+#, php-format
+msgid "Shipper %s field is required."
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:55
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:64
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:79
+msgid "street"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:59
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:68
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:87
+msgid "house number"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:64
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:68
+#, php-format
+msgid "Receiver %s field is required."
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:75
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:79
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:83
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:87
+#, php-format
+msgid "Hide shipper %s field is required."
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:75
+msgid "company"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipment.php:83
+msgid "city"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:57
+msgid "ServicePoint delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:66
+#: includes/model/service/class-dhlpwc-model-service-translation.php:23
+msgid "Door delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:74
+msgid "Door delivery in the evening"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:83
+msgid "Door delivery today"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:93
+msgid "Door delivery, avoid dropping at neighbours"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:102
+msgid "Door delivery in the evening, avoid dropping at neighbours"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:112
+msgid "Door delivery today, avoid dropping at neighbours"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:122
+msgid "Door delivery on Saturdays"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-shipping-preset.php:131
+msgid "Door delivery before 11:00AM"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:22
+msgid "DHL Servicepoint"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:24
+msgid "Mailbox delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:25
+msgid "Hold for collection"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:28
+msgid "Expresser"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:29
+msgid "Delivery to construction site"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:30
+msgid "Ex Works"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:31
+msgid "Extra assurance"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:32
+msgid "Evening delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:33
+msgid "Recap"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:34
+msgid "All risks insurance"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:37
+msgid "Signature on delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:38
+msgid "No neighbour delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:39
+msgid "Print extra label for return shipment"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:40
+msgid "Undisclosed sender"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:41
+msgid "Same-day delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:42
+msgid "Saturday delivery"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:43
+msgid "Age check 18+"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:57
+msgid "Small"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:58
+msgid "Medium"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:59
+msgid "Large"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:60
+msgid "Pallet"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:61
+msgid "Bulky"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:62
+msgid "Roll"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:63
+msgid "Extra Small"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:64
+msgid "Extra Large"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:78
+msgid "Mailbox only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:79
+msgid "Smallest"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:80
+msgid "Small only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:81
+msgid "Medium only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:82
+msgid "Large only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:83
+msgid "Extra Small only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:84
+msgid "Extra Large only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:85
+msgid "Roll only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:86
+msgid "Bulky only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:87
+msgid "Largest only"
+msgstr ""
+
+#: includes/model/service/class-dhlpwc-model-service-translation.php:106
+msgid ""
+"Once the shipment has been scanned, simply follow it with track & "
+"trace. Once the delivery is planned you will see the expected delivery "
+"time."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:37
+msgid ""
+"This is the official DHL Plugin for WooCommerce in WordPress. Do you "
+"have a WooCommerce webshop and are you looking for an easy way to "
+"process shipments within the Netherlands and abroad? This plugin offers "
+"you many options. You can easily create shipping labels and offer "
+"multiple delivery options in your webshop. Set up your account below."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:81
+msgid "Shipping Zones Settings"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:83
+msgid "Please enable Shipping Zones to use this feature."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:108
+msgid "Plugin Settings"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:110
+msgid "Enable features of this plugin."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:113
+msgid "Enable plugin"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:115
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:122
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:136
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:143
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:164
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:246
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:253
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:260
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:267
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:291
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:307
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:322
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:336
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:382
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:394
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:412
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:437
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:443
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:459
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:563
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:625
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:631
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:692
+#: includes/view/admin/settings/bulk-header.php:7
+#: includes/view/admin/settings/delivery-times-header.php:6
+#: includes/view/admin/settings/options-grid-header.php:7
+msgid "Enable"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:116
+msgid "Disabling this turns all of the plugin's features off."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:120
+msgid "Dashboard menu link"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:123
+msgid ""
+"Add a shortcut to the WooCommerce dashboard menu to quickly jump to DHL "
+"settings."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:129
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:157
+msgid "Show"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:130
+msgid ""
+"Add shipping information in an additional column in your order overview."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:134
+msgid "Open admin label links in a new window"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:137
+msgid ""
+"Label actions like downloading PDF or opening track & trace will open "
+"in a new window."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:141
+msgid "Track & trace in email"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:144
+msgid ""
+"Add track & trace information to the default WooCommerce 'completed "
+"order' e-mail if available."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:148
+msgid "Custom track & trace email text"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:151
+msgid ""
+"Leave empty to use default. Note: it's recommended to write this in "
+"English and pass through translation under the code 'dhlpwc'."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:155
+msgid "Track & trace component"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:158
+msgid ""
+"Include a track & trace component in the order summary for customers, "
+"when they log into the website and check their account information."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:162
+msgid "Servicepoint information in email"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:165
+msgid ""
+"Add servicepoint information below customer details in order emails"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:169
+msgid "Google Maps Javascript API key"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:171
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:218
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:223
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:233
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:423
+#, php-format
+msgid "Example: %s"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:173
+#, php-format
+msgid ""
+"To show a visual map provided by Google Maps, please fill in your "
+"Google Maps Javascript API key. If unavailable, a regular selection box "
+"is shown without a map.%sNo Google Maps Javascript API credentials yet? "
+"Follow the instructions %shere%s on how to get the API key."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:180
+msgid "Apply status change when creating a label"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:182
+msgid "Change status if order is: Pending payment"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:188
+msgid "Change status if order is: Processing"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:193
+msgid "Change status if order is: On hold"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:199
+msgid "Do not change order status"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:210
+#, php-format
+msgid ""
+"DHL API settings. Still missing API credentials? Follow the "
+"instructions %shere%s."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:226
+msgid "Test connection"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:238
+msgid "Label Settings"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:240
+msgid "Default label settings."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:244
+msgid "Always enable required signature if available"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:247
+msgid ""
+"When creating a label, always select the signature option by default if "
+"the service is available."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:251
+msgid "Always enable age check 18+ if available"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:254
+msgid ""
+"When creating a label, always select the age check 18+ option by "
+"default if the service is available."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:258
+msgid "Automatically add the order number as a reference, if possible"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:261
+msgid ""
+"When creating a label, always add the order number as reference by "
+"default if the service is available."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:265
+msgid "Always enable return label if available"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:268
+msgid ""
+"When creating a label, always select the return label option by default "
+"if the service is available."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:276
+msgid "Choose mailbox, skip if unavailable"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:277
+msgid "Choose the smallest available size"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:278
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:279
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:280
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:281
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:282
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:283
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:284
+#, php-format
+msgid "Choose size '%s' only, skip if unavailable"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:285
+msgid "Choose the largest available size"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:289
+msgid "Bulk label download"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:295
+msgid "Bulk labels combined for page printing"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:298
+msgid "Default (1 label per page)"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:299
+msgid "Print 3 labels per page for an A4 paper sheet"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:301
+msgid ""
+"When downloading labels with the bulk feature, labels can be combined "
+"to make it easier to print on a single sheet"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:305
+msgid "Validation rule: addresses require street number"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:308
+msgid ""
+"When activated, labels cannot be created for addresses without street "
+"number."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:314
+msgid "Shipment options"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:316
+msgid "Choose the shipment options for the recipients of your webshop."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:320
+msgid "Send to business by default"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:323
+msgid ""
+"When enabled, by default labels will be created for business shipments "
+"and the checkout will show business shipping options."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:328
+msgid "Replace text label translation domain"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:330
+msgid ""
+"If using replacement text labels for shipping methods, it's possible to "
+"filter it with a translation domain. To use the text as-is, leave this "
+"field empty."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:334
+msgid "Use shipping zones"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:337
+msgid "Set shipping methods per shipping zone."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:342
+msgid "Change the sort behavior of shipment methods"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:345
+msgid "Default"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:346
+msgid "Sort by cost - lowest first"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:347
+msgid "Sort by cost - highest first"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:348
+msgid "Sort by custom sorting number"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:359
+msgid "Delivery times"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:361
+msgid ""
+"Allow customers to select delivery times and manage when to send "
+"packages"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:370
+msgid "Default Shipping Address"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:372
+msgid "Fill in the details of your shipping address."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:380
+msgid "Different return address"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:383
+msgid "Use a different address for return labels."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:392
+msgid "Default hide sender address"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:395
+msgid "Set a default address for the 'Hide sender' service option."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:405
+msgid "Printer settings"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:407
+msgid ""
+"Got a Zebra printer? Download our DHL Printer Service app and print "
+"directly from WooCommerce!"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:410
+msgid "Enable printer features"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:413
+msgid ""
+"Print labels directly with your Zebra printer from within the order "
+"view and order list."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:416
+msgid "Search printers"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:421
+msgid "PrinterID"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:430
+msgid "Debug Settings"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:432
+msgid "Settings for developers."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:435
+msgid "Report errors"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:438
+msgid ""
+"Enable this and select one of the reporting methods below to "
+"automatically send errors of this plugin to the development team."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:441
+msgid "By mail"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:444
+msgid "Errors will be automatically forwarded by e-mail."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:447
+msgid "By custom URL"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:449
+msgid ""
+"Monitoring URL. Used by developers. Can be used for active monitoring, "
+"please contact support for this feature. Will not be used if left empty."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:452
+msgid "External custom URL"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:454
+msgid ""
+"Alternative external URL. Used by developers. Will not be used if left "
+"empty."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:457
+msgid "Log Requests for debugging"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:460
+msgid "Enable this and you can check your request."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:465
+msgid "Feedback"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:467
+msgid ""
+"Got questions or feedback about the plugin? Please let us know by "
+"clicking here."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:517
+msgid "Use default text label"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:553
+msgid "Enter prices with tax included"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:555
+msgid ""
+"Turn this on to enter prices with the tax included. Turn this off to "
+"enter prices without tax."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:561
+msgid "Free or discounted shipping"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:564
+msgid "Offer free shipping (over a certain amount)."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:570
+msgid "Free or discounted shipping threshold"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:572
+msgid ""
+"Free or discounted shipping prices are applied when the total price is "
+"over the inputted value."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:578
+msgid "Free or discounted shipping and coupons"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:580
+msgid "Calculate after applying coupons"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:581
+msgid ""
+"Calculate eligibility for free or discounted shipping after applying "
+"coupons."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:587
+msgid "Apply additional rules after free or discount calculation"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:589
+msgid "Calculate additional rules after free or discount"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:590
+msgid ""
+"When checked, rules will apply after free or discount calculation. When "
+"unchecked, rules will be applied first and ends with free or discount "
+"calculation."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:623
+msgid "Enable delivery times"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:626
+msgid ""
+"Show delivery date and time selection in the checkout and show delivery "
+"dates in the dashboard."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:629
+msgid "Check stock"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:633
+msgid "Only show delivery times when all cart items are in stock."
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:636
+msgid "Number of days to display"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:639
+msgid "Number of days to display for delivery times"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:647
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:648
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:649
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:650
+#, php-format
+msgid "%s available until"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:660
+#, php-format
+msgid "Display %s day"
+msgid_plural "Display %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:690
+#, php-format
+msgid "Ship on %ss"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:707
+msgid "Next day"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:709
+#, php-format
+msgid "%s day"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:803
+#: includes/view/order/meta/form/input/address.php:3
+msgid "First Name"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:808
+#: includes/view/order/meta/form/input/address.php:10
+msgid "Last Name"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:813
+#: includes/view/order/meta/form/input/address.php:17
+msgid "Company"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:819
+#: includes/view/order/meta/form/input/address.php:24
+msgid "Postcode"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:824
+#: includes/view/order/meta/form/input/address.php:31
+msgid "City"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:829
+#: includes/view/order/meta/form/input/address.php:38
+msgid "Street"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:834
+#: includes/view/order/meta/form/input/address.php:45
+msgid "Number"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:839
+#: includes/view/order/meta/form/input/address.php:52
+msgid "Addition"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:844
+msgid "Country"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:847
+msgid "Netherlands"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:848
+msgid "Belgium"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:849
+msgid "Luxembourg"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:850
+msgid "Austria"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:856
+#: includes/view/order/meta/form/input/address.php:59
+msgid "Email"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:861
+#: includes/view/order/meta/form/input/address.php:66
+msgid "Phone"
+msgstr ""
+
+#: includes/model/woocommerce/settings/class-dhlpwc-model-woocommerce-settings-shipping-method.php:1085
+#, php-format
+msgid "Change status to: %s"
+msgstr ""
+
+#: includes/view/admin/notice.php:8
+msgid "DHL for WooCommerce notice"
+msgstr ""
+
+#: includes/view/admin/notice.php:35
+#, php-format
+msgid "%sClick here%s to go to the settings screen."
+msgstr ""
+
+#: includes/view/admin/order/delivery-times.php:12
+#, php-format
+msgid "Expected in %s"
+msgstr ""
+
+#: includes/view/admin/order/delivery-times.php:14
+msgid "Selected date has passed"
+msgstr ""
+
+#: includes/view/admin/order/delivery-times.php:16
+msgid "from"
+msgstr ""
+
+#: includes/view/admin/order/delivery-times.php:16
+msgid "to"
+msgstr ""
+
+#: includes/view/admin/settings/bulk-header.php:6
+msgid "Bulk label creation in overview"
+msgstr ""
+
+#: includes/view/admin/settings/condition/add-button.php:4
+msgid "Add additional rule"
+msgstr ""
+
+#: includes/view/admin/settings/condition/row.php:5
+msgid "If"
+msgstr ""
+
+#: includes/view/admin/settings/condition/row.php:15
+msgid "exceeds"
+msgstr ""
+
+#: includes/view/admin/settings/condition/row.php:21
+msgid "then"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:6
+msgid "Delivery Option"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:8
+msgid "Price"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:9
+msgid "Eligable for Free/discount"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:10
+msgid "Free/discount Price"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:11
+msgid "Replace text label"
+msgstr ""
+
+#: includes/view/admin/settings/options-grid-header.php:12
+msgid "Sort number"
+msgstr ""
+
+#: includes/view/cart/parcelshop-option.php:10
+#: includes/view/order/meta/form/input/parcelshop.php:11
+#: includes/view/order/meta/form/input/terminal.php:11
+msgid "Change"
+msgstr ""
+
+#: includes/view/cart/parcelshop-option.php:12
+msgid "No location selected."
+msgstr ""
+
+#: includes/view/cart/parcelshop-option.php:13
+msgid "Select"
+msgstr ""
+
+#: includes/view/cart/parcelshop-option.php:19
+#: includes/view/order/meta/form/input/parcelshop.php:24
+msgid "Search with postal code or city"
+msgstr ""
+
+#: includes/view/cart/parcelshop/confirm-button.php:4
+msgid "Select this ServicePoint"
+msgstr ""
+
+#: includes/view/mail/plain/track-and-trace.php:7
+msgid "Tracking"
+msgstr ""
+
+#: includes/view/order/meta.php:2
+msgid "Create a new label"
+msgstr ""
+
+#: includes/view/order/meta.php:10
+msgid "Size and weight"
+msgstr ""
+
+#: includes/view/order/meta.php:13
+msgid "Can't load parcel types"
+msgstr ""
+
+#: includes/view/order/meta.php:17
+msgid "Create"
+msgstr ""
+
+#: includes/view/order/meta/form/input/parcelshop.php:8
+msgid "Select a DHL ServicePoint"
+msgstr ""
+
+#: includes/view/order/meta/form/input/parcelshop/none.php:4
+msgid "No DHL ServicePoint found"
+msgstr ""
+
+#: includes/view/order/meta/form/input/terminal.php:8
+msgid "Select a terminal"
+msgstr ""
+
+#: includes/view/order/meta/form/input/terminal/none.php:4
+msgid "No terminal found"
+msgstr ""
+
+#: includes/view/order/meta/form/no-sizes.php:3
+msgid "No labels available with these options."
+msgstr ""
+
+#: includes/view/order/meta/form/options.php:3
+msgid "Delivery method"
+msgstr ""
+
+#: includes/view/order/meta/form/options.php:40
+msgid "Extra services"
+msgstr ""
+
+#: includes/view/order/meta/form/sizes-headline.php:2
+msgid "Selected:"
+msgstr ""
+
+#: includes/view/order/meta/form/to-business.php:13
+msgid "Private"
+msgstr ""
+
+#: includes/view/order/meta/form/to-business.php:14
+msgid "Business"
+msgstr ""
+
+#: includes/view/order/meta/label-container.php:3
+msgid "Labels for this order"
+msgstr ""
+
+#: includes/view/order/meta/label.php:14
+msgid "Return label"
+msgstr ""
+
+#: includes/view/order/meta/no-label.php:2
+msgid "No labels have been created yet."
+msgstr ""
+
+#: includes/view/parcelshop-info.php:16
+msgid "DHL ServicePoint"
+msgstr ""
+
+#: includes/view/unavailable.php:2
+msgid "DHL data unavailable."
+msgstr ""
