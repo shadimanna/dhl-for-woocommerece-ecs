@@ -50,60 +50,6 @@ class PR_DHL_API_Factory {
 				case 'IN':
 					$dhl_obj = new PR_DHL_API_eCS_Asia( $country_code );
 					break;
-				case 'DE':
-					$dhl_obj = new PR_DHL_API_Paket( $country_code );
-					break;
-                case 'AT':
-				case 'AL':
-				case 'AD':
-				case 'AM':
-				case 'AZ':
-				case 'BY':
-				case 'BE':
-				case 'BA':
-				case 'BG':
-				case 'HR':
-				case 'CY':
-				case 'CZ':
-				case 'DK':
-				case 'EE':
-				case 'FI':
-				case 'FR':
-				case 'GE':
-				case 'GR':
-				case 'HU':
-				case 'IS':
-				case 'IE':
-				case 'IT':
-				case 'KM':
-				case 'LV':
-				case 'LI':
-				case 'LT':
-				case 'LU':
-				case 'MT':
-				case 'MD':
-				case 'MC':
-				case 'ME':
-				case 'NL':
-				case 'MK':
-				case 'NO':
-				case 'PL':
-				case 'PT':
-				case 'RO':
-				case 'RU':
-				case 'SM':
-				case 'RS':
-				case 'SK':
-				case 'SI':
-				case 'ES':
-				case 'SE':
-				case 'CH':
-				case 'TR':
-				case 'UA':
-				case 'GB':
-				case 'VA':
-					$dhl_obj = new PR_DHL_API_Deutsche_Post( $country_code );
-					break;
 				default:
 					throw new Exception( __('The DHL plugin is not supported in your store\'s "Base Location"', 'pr-shipping-dhl') );
 			}
