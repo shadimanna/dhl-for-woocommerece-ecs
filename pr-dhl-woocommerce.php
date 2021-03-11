@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: DHL for WooCommerce
- * Plugin URI: https://github.com/shadimanna/dhl-logistic-services-for-woocommerce
- * Description: WooCommerce integration for DHL eCommerce, DHL Paket, DHL Parcel Europe (Benelux and Iberia) and Deutsche Post International
+ * Plugin Name: DHL for WooCommerce eCS
+ * Plugin URI: https://github.com/shadimanna/dhl-for-woocommerece-ecs
+ * Description: WooCommerce integration for DHL eCommerce US & Asia
  * Author: DHL
  * Author URI: http://dhl.com/woocommerce
- * Version: 2.5.3
+ * Version: 1.0.0
  * WC requires at least: 3.0
- * WC tested up to: 4.5
+ * WC tested up to: 5.0
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ if ( ! class_exists( 'PR_DHL_WC' ) ) :
 
 class PR_DHL_WC {
 
-	private $version = "2.5.3";
+	private $version = "1.0.0";
 
 	/**
 	 * Instance to call certain functions globally within the plugin
