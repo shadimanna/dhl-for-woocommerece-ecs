@@ -17,11 +17,15 @@ abstract class PR_DHL_API {
 		return false;
 	}
 
-	public function is_dhl_ecs_us( ) {
+	public function is_dhl_ecs( ) {
 		return false;
 	}
 
 	public function is_dhl_ecs_asia( ) {
+		return false;
+	}
+
+	public function is_dhl_ecomm( ) {
 		return false;
 	}
 
@@ -41,7 +45,7 @@ abstract class PR_DHL_API {
 		if ( $this->dhl_finder ) {
 			return $this->dhl_finder->get_parcel_location( $args );
 		} else {
-			throw new Exception( __('Parcel Finder not available', 'pr-shipping-dhl') );
+			throw new Exception( __('Parcel Finder not available', 'dhl-for-woocommerce') );
 		}
 	}
 
@@ -71,8 +75,8 @@ abstract class PR_DHL_API {
 
 	public function get_dhl_duties() {
 		$duties = array(
-					'DDU' => __('Delivery Duty Unpaid', 'pr-shipping-dhl'),
-					'DDP' => __('Delivery Duty Paid', 'pr-shipping-dhl')
+					'DDU' => __('Delivery Duty Unpaid', 'dhl-for-woocommerce'),
+					'DDP' => __('Delivery Duty Paid', 'dhl-for-woocommerce')
 					);
 		return $duties;
 	}
