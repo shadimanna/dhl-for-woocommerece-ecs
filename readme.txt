@@ -5,10 +5,10 @@
 * Tags: DHL, original DHL, DHL, eCommerce, DHL Asia, DHL US, WooCommerce, Woocom, Woo Commerce, Shipping, shiping, label creation, label printing
 * Requires at least: 4.1
 * Requires PHP: 5.6
-* Tested up to: 5.6
-* Stable tag: 1.0.0
+* Tested up to: 5.9
+* Stable tag: 1.0.1
 * WC requires at least: 3.0
-* WC tested up to: 5.0
+* WC tested up to: 6.1
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,9 @@ Click [here](www.dhl.com/faqs) for our FAQs or check out our [integration page](
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix Asia loading
 
 = 1.0 =
 * First public release
