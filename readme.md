@@ -6,7 +6,7 @@
 * Requires at least: 4.1
 * Requires PHP: 5.6
 * Tested up to: 5.6
-* Stable tag: 1.0.0
+* Stable tag: 1.0.1
 * WC requires at least: 3.0
 * WC tested up to: 5.0
 * License: GPLv2 or later
@@ -19,7 +19,6 @@ The official DHL for WooCommerce eCommerce plugin allows you to automate your la
 DHL’s official extension for WooCommerce on Wordpress. Manage your national and international shipments easily.  The “DHL for WooCommerce” – plugin is compatible with the following DHL service offerings depending on your origin country:
 
 * DHL eCommerce Asia (AU, CN, HK, IN, VN, TH, SG, MY)
-* DHL eCommerce US (US, CA)
 
 
 == Features ==
@@ -45,6 +44,9 @@ Click [here](www.dhl.com/faqs) for our FAQs or check out our [integration page](
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix Asia loading
 
 = 1.0 =
 * First public release
