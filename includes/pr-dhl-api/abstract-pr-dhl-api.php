@@ -17,15 +17,11 @@ abstract class PR_DHL_API {
 		return false;
 	}
 
-	public function is_dhl_ecs( ) {
+	public function is_dhl_ecs_us( ) {
 		return false;
 	}
 
 	public function is_dhl_ecs_asia( ) {
-		return false;
-	}
-
-	public function is_dhl_ecomm( ) {
 		return false;
 	}
 
