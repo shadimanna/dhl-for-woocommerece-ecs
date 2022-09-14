@@ -582,7 +582,7 @@ class PR_DHL_WC_Order_eCS_US extends PR_DHL_WC_Order {
 		// listen for 'print' action query string
 		if ( isset( $_GET['pr_dhl_action'] ) && 'print' === $_GET['pr_dhl_action'] ) {
 
-			$nonce = isset( $_REQUEST['_wpnonce'] ) ? $_REQUEST['_wpnonce'] : '';
+			$nonce = $_REQUEST['_wpnonce'] ?? '';
 
 			// security admin/frontend checks
 			if ( ! $nonce || ! wp_verify_nonce( $nonce, 'pr_dhl_handover' ) ) {
@@ -592,7 +592,7 @@ class PR_DHL_WC_Order_eCS_US extends PR_DHL_WC_Order {
 			$order_id = isset( $_GET['order_id'] ) ? (int) $_GET['order_id'] : 0;
 
 			// Get order IDs temporary option.
-			$order_ids_hash = isset( $_GET['order_ids'] ) ? $_GET['order_ids'] : '';
+			$order_ids_hash = isset( $_GET['order_ids'] ) ? sanitize_text_field( $_GET['order_ids'] ) : '';
 			$order_ids      = empty( $order_ids_hash )    ? array()            : get_option( "pr_dhl_handover_order_ids_{$order_ids_hash}" );
 			$order_ids      = false === $order_ids        ? array()            : $order_ids;
 
@@ -678,7 +678,7 @@ class PR_DHL_WC_Order_eCS_US extends PR_DHL_WC_Order {
 				'dhl_label_created'        => __( 'DHL Label Created', 'pr-shipping-dhl' ),
 			);
 
-			$selected = isset( $_GET['_shop_order_dhl_label_created'] ) ? $_GET['_shop_order_dhl_label_created'] : '';
+			$selected = isset( $_GET['_shop_order_dhl_label_created'] ) ? sanitize_text_field( $_GET['_shop_order_dhl_label_created'] ) : '';
 
 			?>
 			<select name="_shop_order_dhl_label_created" id="dropdown_shop_order_dhl_label_created">

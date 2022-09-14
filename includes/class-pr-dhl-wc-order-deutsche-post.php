@@ -954,16 +954,16 @@ class PR_DHL_WC_Order_Deutsche_Post extends PR_DHL_WC_Order {
 				}
 			}
 
-			$get_copy_count = $_REQUEST['dhl_awb_copy_count'];
+			$get_copy_count = (int) $_REQUEST['dhl_awb_copy_count'];
 			
-			if( empty( $get_copy_count ) ){
+			if ( empty( $get_copy_count ) ) {
 
 				return __( 'Copy count must not be empty.', 'dhl-for-woocommerce' );
 
-			}elseif( !is_numeric( $get_copy_count ) ){
+			} elseif ( ! is_numeric( $get_copy_count ) ) {
 
 				return __( 'Copy count must be numeric.', 'dhl-for-woocommerce' );
-			}elseif( 50 <= intval( $get_copy_count ) ){
+			} elseif ( 50 <= intval( $get_copy_count ) ) {
 
 				return __( 'Copy count must not be more than 50.', 'dhl-for-woocommerce' );
 			}
@@ -1026,11 +1026,11 @@ class PR_DHL_WC_Order_Deutsche_Post extends PR_DHL_WC_Order {
 			try {
 				$order = $instance->api_client->get_order();
 				$items_count 	= count( $order['items'] );
-				$get_copy_count = $_GET['dhl_awb_copy_count'];
+				$get_copy_count = $_GET['dhl_awb_copy_count'] ? absint( $_GET['dhl_awb_copy_count'] ) : 1;
 				
-				if( !empty( $get_copy_count ) && is_numeric( $get_copy_count ) ){
+				if ( ! empty( $get_copy_count ) ) {
 					$copy_count = $get_copy_count;	
-				}else{
+				} else {
 					$copy_count = 1;
 				}
 				
