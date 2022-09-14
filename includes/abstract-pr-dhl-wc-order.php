@@ -966,17 +966,18 @@ abstract class PR_DHL_WC_Order {
 				}
 
 				foreach ($bulk_action_message_opt as $key => $value) {
-					$type = wp_kses_post( $value['type'] );
+                    $message    = wp_kses_post( $value['message'] );
+					$type       = wp_kses_post( $value['type'] );
 
 					switch ( $type ) {
                         case 'error':
-                            echo '<div class="notice notice-error"><ul><li>' . esc_html( $value['message'] ) . '</li></ul></div>';
+                            echo '<div class="notice notice-error"><ul><li>' . $message . '</li></ul></div>';
                             break;
                         case 'success':
-                            echo '<div class="notice notice-success"><ul><li><strong>' . esc_html( $value['message'] ) . '</strong></li></ul></div>';
+                            echo '<div class="notice notice-success"><ul><li><strong>' . $message . '</strong></li></ul></div>';
                             break;
                         default:
-                            echo '<div class="notice notice-warning"><ul><li><strong>' . esc_html( $value['message'] ) . '</strong></li></ul></div>';
+                            echo '<div class="notice notice-warning"><ul><li><strong>' . $message . '</strong></li></ul></div>';
                     }
 				}
 
@@ -1047,10 +1048,10 @@ abstract class PR_DHL_WC_Order {
 
 							++$label_count;
 
-							array_push($array_messages, array(
-                                'message' => sprintf( __( 'Order #%s: DHL label Created', 'smart-send-shipping'), $order->get_order_number() ),
+							$array_messages[] = array(
+                                'message' => sprintf(__('Order #%s: DHL label Created', 'smart-send-shipping'), $order->get_order_number()),
                                 'type' => 'success',
-                            ));
+                            );
 
                             do_action( 'pr_shipping_dhl_label_created', $order_id );
 
@@ -1061,10 +1062,10 @@ abstract class PR_DHL_WC_Order {
 					}
 
 				} catch (Exception $e) {
-					array_push($array_messages, array(
-	                    'message' => sprintf( __( 'Order #%s: %s', 'smart-send-shipping'), $order->get_order_number(), $e->getMessage() ),
-	                    'type' => 'error',
-	                ));
+					$array_messages[] = array(
+                        'message' => sprintf(__('Order #%s: %s', 'smart-send-shipping'), $order->get_order_number(), $e->getMessage()),
+                        'type' => 'error',
+                    );
 				}
 			}
 
@@ -1085,25 +1086,23 @@ abstract class PR_DHL_WC_Order {
 					// Construct URL pointing to the download label endpoint (with bulk param):
 					$bulk_download_label_url = $this->generate_download_url( '/' . self::DHL_DOWNLOAD_ENDPOINT . '/bulk' );
 
-					array_push($array_messages, array(
-	                    'message' => sprintf( __( 'Bulk DHL labels file created - %sdownload file%s', 'dhl-for-woocommerce' ), '<a href="' . $bulk_download_label_url . '" download>', '</a>' ),
-	                    'type' => 'success',
-	                ));
+                    $array_messages[] = array(
+                        'message' => wp_sprintf( __( 'Bulk DHL labels file created - %sdownload file%s', 'dhl-for-woocommerce' ), '<a href="' . $bulk_download_label_url . '" download>', '</a>' ),
+                        'type' => 'success',
+                    );
 
 		        } else {
-					// $message .= __( '. Could not create bulk DHL label file, download individually.', 'dhl-for-woocommerce' );
-
-					array_push($array_messages, array(
-	                    'message' => __( 'Could not create bulk DHL label file, download individually.', 'dhl-for-woocommerce' ),
-	                    'type' => 'error',
-	                ));
+					$array_messages[] = array(
+                        'message' => __('Could not create bulk DHL label file, download individually.', 'dhl-for-woocommerce'),
+                        'type' => 'error',
+                    );
 		        }
 
 			} catch (Exception $e) {
-				array_push($array_messages, array(
+				$array_messages[] = array(
                     'message' => $e->getMessage(),
                     'type' => 'error',
-                ));
+                );
 			}
 		}
 
