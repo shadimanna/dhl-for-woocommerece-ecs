@@ -27,7 +27,7 @@ class PR_DHL_API_eCS_Asia extends PR_DHL_API {
 	 *
 	 * @since [*next-version*]
 	 */
-	const API_URL_SANDBOX = 'https://sandbox.dhlecommerce.asia/';
+	const API_URL_SANDBOX = 'https://apitest.dhlecommerce.asia/';
 
 	/**
 	 * The transient name where the API access token is stored.
