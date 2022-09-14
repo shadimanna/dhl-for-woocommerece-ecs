@@ -966,18 +966,17 @@ abstract class PR_DHL_WC_Order {
 				}
 
 				foreach ($bulk_action_message_opt as $key => $value) {
-                    $message    = wp_kses_post( $value['message'] );
 					$type       = wp_kses_post( $value['type'] );
 
 					switch ( $type ) {
                         case 'error':
-                            echo '<div class="notice notice-error"><ul><li>' . $message . '</li></ul></div>';
+                            echo '<div class="notice notice-error"><ul><li>' . wp_kses_post( $value['message'] ) . '</li></ul></div>';
                             break;
                         case 'success':
-                            echo '<div class="notice notice-success"><ul><li><strong>' . $message . '</strong></li></ul></div>';
+                            echo '<div class="notice notice-success"><ul><li><strong>' . wp_kses_post( $value['message'] ) . '</strong></li></ul></div>';
                             break;
                         default:
-                            echo '<div class="notice notice-warning"><ul><li><strong>' . $message . '</strong></li></ul></div>';
+                            echo '<div class="notice notice-warning"><ul><li><strong>' . wp_kses_post( $value['message'] ) . '</strong></li></ul></div>';
                     }
 				}
 
