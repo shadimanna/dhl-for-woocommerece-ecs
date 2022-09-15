@@ -453,7 +453,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 			$id_name = str_replace('pr_dhl_', '', $default_id);
 
 			if ( !isset($dhl_label_items[$default_id]) ) {
-				$dhl_label_items[$default_id] = isset( $this->shipping_dhl_settings['dhl_default_' . $id_name] ) ? $this->shipping_dhl_settings['dhl_default_' . $id_name] : '';
+				$dhl_label_items[$default_id] = $this->shipping_dhl_settings['dhl_default_' . $id_name] ?? '';
 			}
 		}
 
@@ -801,9 +801,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 	public function process_download_close_out() {
 		global $wp_query;
 
-		$dhl_close_out_id = isset($wp_query->query_vars[ self::DHL_DOWNLOAD_CLOSE_OUT_ENDPOINT ] )
-			? $wp_query->query_vars[ self::DHL_DOWNLOAD_CLOSE_OUT_ENDPOINT ]
-			: null;
+		$dhl_close_out_id = $wp_query->query_vars[self::DHL_DOWNLOAD_CLOSE_OUT_ENDPOINT] ?? null;
 
 		// If the endpoint param (aka the DHL order ID) is not in the query, we bail
 		if ( $dhl_close_out_id === null ) {
@@ -818,18 +816,16 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 			$array_messages = array( 'msg_user_id' => get_current_user_id() );
 		}
 
-		if ( false == $this->download_label( $label_path ) ) {
-			array_push($array_messages, array(
-				'message' => __( 'Unable to download file. Label appears to be invalid or is missing. Please try again.', 'dhl-for-woocommerce' ),
-				'type' => 'error'
-			));
+		if ( false === $this->download_label( $label_path ) ) {
+			$array_messages[] = array(
+                'message' => __('Unable to download file. Label appears to be invalid or is missing. Please try again.', 'dhl-for-woocommerce'),
+                'type' => 'error'
+            );
 		}
 
 		update_option( '_pr_dhl_bulk_action_confirmation', $array_messages );
 
-		$redirect_url = isset($wp_query->query_vars[ 'referer' ])
-			? $wp_query->query_vars[ 'referer' ]
-			: admin_url('edit.php?post_type=shop_order');
+		$redirect_url = $wp_query->query_vars['referer'] ?? admin_url('edit.php?post_type=shop_order');
 
 		// If there are errors redirect to the shop_orders and display error
 		if ( $this->has_error_message( $array_messages ) ) {
@@ -843,7 +839,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 		// listen for 'print' action query string
 		if ( isset( $_GET['pr_dhl_action'] ) && 'print' === $_GET['pr_dhl_action'] ) {
 
-			$nonce = isset( $_REQUEST['_wpnonce'] ) ? $_REQUEST['_wpnonce'] : '';
+			$nonce = $_REQUEST['_wpnonce'] ?? '';
 
 			// security admin/frontend checks
 			if ( ! $nonce || ! wp_verify_nonce( $nonce, 'pr_dhl_handover' ) ) {
@@ -853,7 +849,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 			$order_id = isset( $_GET['order_id'] ) ? (int) $_GET['order_id'] : 0;
 
 			// Get order IDs temporary option.
-			$order_ids_hash = isset( $_GET['order_ids'] ) ? $_GET['order_ids'] : '';
+			$order_ids_hash = isset( $_GET['order_ids'] ) ? sanitize_text_field( $_GET['order_ids'] ) : '';
 			$order_ids      = empty( $order_ids_hash )    ? array()            : get_option( 'pr_dhl_handover_order_ids_' . $order_ids_hash );
 			$order_ids      = false === $order_ids        ? array()            : $order_ids;
 
@@ -939,7 +935,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 				'dhl_label_created'        => __( 'DHL Label Created', 'dhl-for-woocommerce' ),
 			);
 
-			$selected = isset( $_GET['_shop_order_dhl_label_created'] ) ? $_GET['_shop_order_dhl_label_created'] : '';
+			$selected = isset( $_GET['_shop_order_dhl_label_created'] ) ? sanitize_text_field( $_GET['_shop_order_dhl_label_created'] ) : '';
 
 			?>
 			<select name="_shop_order_dhl_label_created" id="dropdown_shop_order_dhl_label_created">
