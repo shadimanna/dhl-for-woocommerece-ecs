@@ -224,16 +224,9 @@ class PR_DHL_WC {
 			try {
 				$dhl_obj = $this->get_dhl_factory();
 
-				if( $dhl_obj->is_dhl_paket() ) {
-					$this->shipping_dhl_order = new PR_DHL_WC_Order_Paket();
-					$this->shipping_dhl_frontend = new PR_DHL_Front_End_Paket();
-				} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-					$this->shipping_dhl_order = new PR_DHL_WC_Order_eCS_US();
-				} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+				if( $dhl_obj->is_dhl_ecs_asia() ) {
 					$this->shipping_dhl_order = new PR_DHL_WC_Order_eCS_Asia();
-				} elseif ( $dhl_obj->is_dhl_deutsche_post() ) {
-				    $this->shipping_dhl_order = new PR_DHL_WC_Order_Deutsche_Post();
-                }
+				}
 
 				// Ensure DHL Labels folder exists
 				$this->dhl_label_folder_check();
@@ -250,14 +243,8 @@ class PR_DHL_WC {
 			try {
 				$dhl_obj = $this->get_dhl_factory();
 
-				if( $dhl_obj->is_dhl_paket() ) {
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_Paket();
-				} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_eCS_US();
-				} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+				if( $dhl_obj->is_dhl_ecs_asia() ) {
 					$this->shipping_dhl_product = new PR_DHL_WC_Product_eCS_Asia();
-				} elseif( $dhl_obj->is_dhl_deutsche_post() ){
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_Deutsche_Post();
 				}
 
 			} catch (Exception $e) {
