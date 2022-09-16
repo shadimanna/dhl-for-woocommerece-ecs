@@ -89,7 +89,8 @@ p.dhl-total-packages > label {
 }
 
 .package_item input {
-  width: 40px !important;
+	width: 40px !important;
+}
 
 .dhl-awb-filter-container{
 	clear:both;

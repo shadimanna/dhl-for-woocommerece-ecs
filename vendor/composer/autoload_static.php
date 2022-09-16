@@ -21,11 +21,13 @@ class ComposerStaticInitf157335b37588c2d91df9d32b4934c2d
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PR\\DHL\\REST_API\\API_Client' => __DIR__ . '/../..' . '/includes/REST_API/API_Client.php',
-        'PR\\DHL\\REST_API\\Deutsche_Post\\Auth' => __DIR__ . '/../..' . '/includes/REST_API/Deutsche_Post/Auth.php',
-        'PR\\DHL\\REST_API\\Deutsche_Post\\Client' => __DIR__ . '/../..' . '/includes/REST_API/Deutsche_Post/Client.php',
-        'PR\\DHL\\REST_API\\Deutsche_Post\\Item_Info' => __DIR__ . '/../..' . '/includes/REST_API/Deutsche_Post/Item_Info.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Auth' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Auth.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Client' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Client.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Item_Info' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Item_Info.php',
         'PR\\DHL\\REST_API\\Drivers\\JSON_API_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/JSON_API_Driver.php',
+        'PR\\DHL\\REST_API\\Drivers\\Logging_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/Logging_Driver.php',
         'PR\\DHL\\REST_API\\Drivers\\WP_API_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/WP_API_Driver.php',
         'PR\\DHL\\REST_API\\Interfaces\\API_Auth_Interface' => __DIR__ . '/../..' . '/includes/REST_API/Interfaces/API_Auth_Interface.php',
         'PR\\DHL\\REST_API\\Interfaces\\API_Driver_Interface' => __DIR__ . '/../..' . '/includes/REST_API/Interfaces/API_Driver_Interface.php',
