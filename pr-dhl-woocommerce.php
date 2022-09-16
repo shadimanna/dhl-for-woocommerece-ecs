@@ -548,7 +548,7 @@ class PR_DHL_WC {
 		}
 
 		ob_start();
-		echo '<img src="'.plugin_dir_url(__FILE__).'lib/barcode.php?text='.$text.'&size='.$size.'" alt="barcode"/>';
+		echo '<img src="'.plugin_dir_url(__FILE__).'lib/barcode.php?text='.esc_html( $text ).'&size='.esc_html( $size ).'" alt="barcode"/>';
 		$view = ob_get_clean();
 	    return $view;
 	}

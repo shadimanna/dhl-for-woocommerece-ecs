@@ -37,7 +37,7 @@ class PR_DHL_WC_Product_eCS_Asia extends PR_DHL_WC_Product {
 
 	    } catch (Exception $e) {
 
-	    	echo '<p class="wc_dhl_error">' . $e->getMessage() . '</p>';
+	    	echo '<p class="wc_dhl_error">' . esc_html( $e->getMessage() ) . '</p>';
 	    }
 	    
 	    woocommerce_wp_select(
