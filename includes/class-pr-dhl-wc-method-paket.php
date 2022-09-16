@@ -991,7 +991,7 @@ class PR_DHL_WC_Method_Paket extends WC_Shipping_Method {
 		}
 
 		// Verify shipper reference set
-		$shipper_reference = $_POST[ $this->plugin_id . $this->id . '_dhl_shipper_reference' ];
+		$shipper_reference = sanitize_text_field( $_POST[ $this->plugin_id . $this->id . '_dhl_shipper_reference' ] );
 
 		if ( empty( $shipper_reference ) ) {
 
@@ -1016,7 +1016,7 @@ class PR_DHL_WC_Method_Paket extends WC_Shipping_Method {
 		}
 
 		// Verify whether Google API key set
-		$google_maps_api_key = $_POST[ $this->plugin_id . $this->id . '_dhl_google_maps_api_key' ];
+		$google_maps_api_key = sanitize_text_field( $_POST[ $this->plugin_id . $this->id . '_dhl_google_maps_api_key' ] );
 
 		// If not return 'no'
 		if ( empty( $google_maps_api_key ) ) {

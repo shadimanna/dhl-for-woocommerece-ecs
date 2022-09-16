@@ -466,7 +466,7 @@ class PR_DHL_WC_Order_Ecomm extends PR_DHL_WC_Order {
 		// listen for 'print' action query string
 		if ( isset( $_GET['pr_dhl_action'] ) && 'print' === $_GET['pr_dhl_action'] ) {
 
-			$nonce = $_REQUEST['_wpnonce'] ?? '';
+            $nonce = $_REQUEST['_wpnonce'] ? sanitize_text_field( $_REQUEST['_wpnonce'] ) : '';
 
 			// security admin/frontend checks
 			if ( ! $nonce || ! wp_verify_nonce( $nonce, 'pr_dhl_handover' ) ) {

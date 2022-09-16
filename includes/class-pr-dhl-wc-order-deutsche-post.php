@@ -954,7 +954,7 @@ class PR_DHL_WC_Order_Deutsche_Post extends PR_DHL_WC_Order {
 				}
 			}
 
-			$get_copy_count = (int) $_REQUEST['dhl_awb_copy_count'];
+			$get_copy_count = absint( $_REQUEST['dhl_awb_copy_count'] );
 			
 			if ( empty( $get_copy_count ) ) {
 

@@ -324,9 +324,9 @@ class PR_DHL_Front_End_Paket {
 
 		// POST information is either in a query string-like variable called 'post_data'...
 		if ( isset( $_POST['post_data'] ) ) {
-			parse_str( $_POST['post_data'], $post_data );
+			parse_str( sanitize_text_field( wp_unslash( $_POST['post_data'] ) ), $post_data );
 		} else {
-			$post_data = $_POST; // ... else it is in the POST variable itself
+            $post_data = wc_clean( $_POST );
 		}
 
 		try {
@@ -733,7 +733,7 @@ class PR_DHL_Front_End_Paket {
 				$dhl_label_items = array();
 			}
 
-			$dhl_label_items['pr_dhl_email_notification'] = $_POST['pr_dhl_email_notification'];
+			$dhl_label_items['pr_dhl_email_notification'] = sanitize_text_field( $_POST['pr_dhl_email_notification'] );
 			PR_DHL()->get_pr_dhl_wc_order()->save_dhl_label_items( $order_id, $dhl_label_items );
 
 		}
