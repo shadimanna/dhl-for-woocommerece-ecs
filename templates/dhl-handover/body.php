@@ -57,7 +57,7 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
     </div>
     <div class="section-body section-2">
       <div class="name"><?php echo __("Shipping Service(s)"); ?></div>
-      <div class="box"><?php echo esc_html( $shipping_services ); ?></div>
+      <div class="box"><?php echo $shipping_services; ?></div>
     </div>
   </section>
 
