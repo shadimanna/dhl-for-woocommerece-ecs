@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: DHL for WooCommerce eCS
+ * Plugin Name: DHL for WooCommerce eCS Asia
  * Plugin URI: https://github.com/shadimanna/dhl-for-woocommerece-ecs
  * Description: WooCommerce integration for DHL eCommerce US & Asia
  * Author: DHL
  * Author URI: http://dhl.com/woocommerce
- * Version: 1.0.1
+ * Version: 1.0.0
  * Text Domain: dhl-for-woocommerce
  * Domain Path: /lang
  * WC requires at least: 3.0
@@ -35,7 +35,7 @@ if ( ! class_exists( 'PR_DHL_WC' ) ) :
 
 class PR_DHL_WC {
 
-	private $version = "1.0.1";
+	private $version = "1.0.0";
 
 	/**
 	 * Instance to call certain functions globally within the plugin
