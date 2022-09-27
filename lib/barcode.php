@@ -8,12 +8,12 @@
  *	  <img src="/barcode.php?text=testing" alt="testing" />
  */
 		// Get pararameters that are passed in through $_GET or set to the default value
-		$text = (isset($_GET["text"])?$_GET["text"]:"0");
-		$size = (isset($_GET["size"])?$_GET["size"]:"20");
-		$size_tekst = (isset($_GET["size_tekst"])?$_GET["size_tekst"]:"0");
-		$orientation = (isset($_GET["orientation"])?$_GET["orientation"]:"horizontal");
-		$code_type = (isset($_GET["codetype"])?$_GET["codetype"]:"code128");
-		$code_string = "";
+		$text 			= isset( $_GET["text"] ) ? sanitize_text_field( $_GET[ "text" ] ) : "0";
+		$size 			= isset( $_GET["size"] ) ? absint( $_GET[ "size" ] ) : "20" ;
+		$size_tekst 	= isset( $_GET["size_tekst"] ) ? absint( $_GET[ "size_tekst" ] ) : "0" ;
+		$orientation 	= isset( $_GET["orientation"] ) ? sanitize_text_field( $_GET["orientation"] ) : "horizontal";
+		$code_type 		= isset( $_GET["codetype"] ) ? sanitize_text_field( $_GET["codetype"] ) : "code128";
+		$code_string 	= "";
 
 		// Translate the $text into barcode the correct $code_type
 		if ( strtolower($code_type) == "code128" ) {

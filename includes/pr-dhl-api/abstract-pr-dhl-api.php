@@ -12,20 +12,8 @@ abstract class PR_DHL_API {
 	protected $country_code;
 
 	// abstract public function set_dhl_auth( $client_id, $client_secret );
-	
-	public function is_dhl_paket( ) {
-		return false;
-	}
-
-	public function is_dhl_ecs_us( ) {
-		return false;
-	}
 
 	public function is_dhl_ecs_asia( ) {
-		return false;
-	}
-
-	public function is_dhl_deutsche_post( ) {
 		return false;
 	}
 
@@ -63,10 +51,6 @@ abstract class PR_DHL_API {
 
 	public function dhl_reset_connection( ) {
 		return;
-	}
-
-	public function get_dhl_preferred_day_time( $postcode, $account_num, $cutoff_time, $working_days ) {
-		return array();
 	}
 
 	public function get_dhl_duties() {

@@ -186,10 +186,10 @@ abstract class PR_DHL_WC_Order {
 
 			// A label has been generated already, allow to delete
 			if( empty( $label_tracking_info ) ) {
-				echo $main_button;
+				echo wp_kses_post( $main_button );
 			} else {
-				echo $print_button;
-				echo $delete_label;
+				echo wp_kses_post( $print_button );
+				echo wp_kses_post( $delete_label );
 			}
 
 			wp_enqueue_script( 'wc-shipment-dhl-label-js', PR_DHL_PLUGIN_DIR_URL . '/assets/js/pr-dhl.js', array('jquery'), PR_DHL_VERSION );

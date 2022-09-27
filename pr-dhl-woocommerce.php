@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: DHL for WooCommerce eCS
+ * Plugin Name: DHL for WooCommerce eCS Asia
  * Plugin URI: https://github.com/shadimanna/dhl-for-woocommerece-ecs
  * Description: WooCommerce integration for DHL eCommerce US & Asia
  * Author: DHL
  * Author URI: http://dhl.com/woocommerce
- * Version: 1.0.1
+ * Version: 1.0.0
  * Text Domain: dhl-for-woocommerce
  * Domain Path: /lang
  * WC requires at least: 3.0
@@ -35,7 +35,7 @@ if ( ! class_exists( 'PR_DHL_WC' ) ) :
 
 class PR_DHL_WC {
 
-	private $version = "1.0.1";
+	private $version = "1.0.0";
 
 	/**
 	 * Instance to call certain functions globally within the plugin
@@ -50,13 +50,6 @@ class PR_DHL_WC {
 	 * @var PR_DHL_WC_Order
 	 */
 	public $shipping_dhl_order = null;
-
-	/**
-	 * DHL Shipping Front-end for DHL Paket
-	 *
-	 * @var PR_DHL_Paket_Front_End
-	 */
-	protected $shipping_dhl_frontend = null;
 
 	/**
 	 * DHL Shipping Order for label and tracking.
@@ -131,31 +124,10 @@ class PR_DHL_WC {
 		// DHL specific URLs
 		$this->define( 'PR_DHL_BUTTON_TEST_CONNECTION', __( 'Test Connection', 'dhl-for-woocommerce' ) );
 
-		// DHL eCommerce
-		$this->define( 'PR_DHL_REST_AUTH_URL', 'https://api.dhlecommerce.com' );
-		$this->define( 'PR_DHL_REST_AUTH_URL_QA', 'https://api-qa.dhlecommerce.com' );
-		$this->define( 'PR_DHL_ECOMM_TRACKING_URL', 'https://webtrack.dhlglobalmail.com/?trackingnumber=' );
-
 		// DHL eCS Asia tracking link. Sandbox => https://preprod2.dhlecommerce.dhl.com/track/?ref=
 		$this->define( 'PR_DHL_ECS_ASIA_SANDBOX_TRACKING_URL', 'https://sandbox.dhlecommerce.dhl.com/track/?locale=en&ref=' );
 		$this->define( 'PR_DHL_ECS_ASIA_TRACKING_URL', 'https://ecommerceportal.dhl.com/track/?ref=' );
 
-		// DHL Paket
-		$this->define( 'PR_DHL_CIG_USR', 'dhl_woocommerce_plugin_2_2' );
-		$this->define( 'PR_DHL_CIG_PWD', 'egOcb8buCPuqxFDf9fyOdWz6z7pKAQ' );
-		$this->define( 'PR_DHL_CIG_AUTH', 'https://cig.dhl.de/services/production/soap' );
-
-		// To use Sandbox, define 'PR_DHL_SANDBOX' to be 'true' and set 'PR_DHL_CIG_USR_QA' and 'PR_DHL_CIG_PWD_QA' outside this plugin
-		$this->define( 'PR_DHL_CIG_AUTH_QA', 'https://cig.dhl.de/services/sandbox/soap' );
-
-		$this->define( 'PR_DHL_PAKET_TRACKING_URL', 'https://www.dhl.de/de/privatkunden/dhl-sendungsverfolgung.html?piececode=' );
-		$this->define( 'PR_DHL_PAKET_BUSSINESS_PORTAL', 'https://www.dhl-geschaeftskundenportal.de' );
-		$this->define( 'PR_DHL_PAKET_DEVELOPER_PORTAL', 'https://entwickler.dhl.de/' );
-		$this->define( 'PR_DHL_PAKET_NOTIFICATION_EMAIL', 'https://www.dhl.de/de/geschaeftskunden/paket/versandsoftware/dhl-paketankuendigung/formular.html' );
-
-		$this->define( 'PR_DHL_PACKSTATION', __('Packstation ', 'dhl-for-woocommerce') );
-		$this->define( 'PR_DHL_PARCELSHOP', __('Postfiliale ', 'dhl-for-woocommerce') );
-		$this->define( 'PR_DHL_POST_OFFICE', __('Postfiliale ', 'dhl-for-woocommerce') );
 	}
 
 	/**
@@ -224,16 +196,9 @@ class PR_DHL_WC {
 			try {
 				$dhl_obj = $this->get_dhl_factory();
 
-				if( $dhl_obj->is_dhl_paket() ) {
-					$this->shipping_dhl_order = new PR_DHL_WC_Order_Paket();
-					$this->shipping_dhl_frontend = new PR_DHL_Front_End_Paket();
-				} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-					$this->shipping_dhl_order = new PR_DHL_WC_Order_eCS_US();
-				} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+				if( $dhl_obj->is_dhl_ecs_asia() ) {
 					$this->shipping_dhl_order = new PR_DHL_WC_Order_eCS_Asia();
-				} elseif ( $dhl_obj->is_dhl_deutsche_post() ) {
-				    $this->shipping_dhl_order = new PR_DHL_WC_Order_Deutsche_Post();
-                }
+				}
 
 				// Ensure DHL Labels folder exists
 				$this->dhl_label_folder_check();
@@ -250,14 +215,8 @@ class PR_DHL_WC {
 			try {
 				$dhl_obj = $this->get_dhl_factory();
 
-				if( $dhl_obj->is_dhl_paket() ) {
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_Paket();
-				} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_eCS_US();
-				} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+				if( $dhl_obj->is_dhl_ecs_asia() ) {
 					$this->shipping_dhl_product = new PR_DHL_WC_Product_eCS_Asia();
-				} elseif( $dhl_obj->is_dhl_deutsche_post() ){
-					$this->shipping_dhl_product = new PR_DHL_WC_Product_Deutsche_Post();
 				}
 
 			} catch (Exception $e) {
@@ -290,17 +249,6 @@ class PR_DHL_WC {
                 'loader_image'   => admin_url( 'images/loading.gif' ),
                 'test_con_nonce' => wp_create_nonce( 'pr-dhl-test-con' ),
             );
-
-			if( isset( $_GET['section'] ) && $_GET['section'] == 'pr_dhl_paket' ){
-
-				wp_enqueue_script(
-					'wc-shipment-dhl-paket-settings-js',
-					PR_DHL_PLUGIN_DIR_URL . '/assets/js/pr-dhl-paket-settings.js',
-					array( 'jquery' ),
-					PR_DHL_VERSION
-				);
-				// wp_localize_script( 'wc-shipment-dhl-paket-settings-js', 'dhl_paket_settings_obj', PR_DHL_WC_Method_Paket::sandbox_info() );
-			}
 
             wp_enqueue_script(
                 'wc-shipment-dhl-testcon-js',
@@ -342,18 +290,9 @@ class PR_DHL_WC {
 		try {
 			$dhl_obj = $this->get_dhl_factory();
 
-			if( $dhl_obj->is_dhl_paket() ) {
-				$pr_dhl_ship_meth = 'PR_DHL_WC_Method_Paket';
-				$shipping_method['pr_dhl_paket'] = $pr_dhl_ship_meth;
-			} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-				$pr_dhl_ship_meth = 'PR_DHL_WC_Method_eCS_US';
-				$shipping_method['pr_dhl_ecs_us'] = $pr_dhl_ship_meth;
-			} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+			if( $dhl_obj->is_dhl_ecs_asia() ) {
 				$pr_dhl_ship_meth = 'PR_DHL_WC_Method_eCS_Asia';
 				$shipping_method['pr_dhl_ecs_asia'] = $pr_dhl_ship_meth;
-			} elseif( $dhl_obj->is_dhl_deutsche_post() ) {
-				$pr_dhl_ship_meth = 'PR_DHL_WC_Method_Deutsche_Post';
-				$shipping_method['pr_dhl_dp'] = $pr_dhl_ship_meth;
 			}
 
 		} catch (Exception $e) {
@@ -411,42 +350,13 @@ class PR_DHL_WC {
 	}
 
 	public function get_api_url() {
-
 		try {
 
 			$dhl_obj = $this->get_dhl_factory();
 
-			if( $dhl_obj->is_dhl_paket() ) {
-
-				$shipping_dhl_settings 	= $this->get_shipping_dhl_settings();
-				$dhl_sandbox 			= isset( $shipping_dhl_settings['dhl_sandbox'] ) ? $shipping_dhl_settings['dhl_sandbox'] : '';
-				if ( $dhl_sandbox == 'yes' || ( defined( 'PR_DHL_SANDBOX' ) && PR_DHL_SANDBOX ) ) {
-
-					$user = defined( 'PR_DHL_CIG_USR_QA' )? PR_DHL_CIG_USR_QA : '';
-					$user = !empty( $shipping_dhl_settings['dhl_api_sandbox_user'] )? $shipping_dhl_settings['dhl_api_sandbox_user'] : $user;
-
-					$pass = defined( 'PR_DHL_CIG_PWD_QA' )? PR_DHL_CIG_PWD_QA : '';
-					$pass = !empty( $shipping_dhl_settings['dhl_api_sandbox_pwd'] )? $shipping_dhl_settings['dhl_api_sandbox_pwd'] : $pass;
-
-					$api_cred['user'] = $user;
-					$api_cred['password'] = $pass;
-					$api_cred['auth_url'] = PR_DHL_CIG_AUTH_QA;
-				} else {
-					$api_cred['user'] = PR_DHL_CIG_USR;
-					$api_cred['password'] = PR_DHL_CIG_PWD;
-					$api_cred['auth_url'] = PR_DHL_CIG_AUTH;
-				}
-
-				return $api_cred;
-
-			} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+			if( $dhl_obj->is_dhl_ecs_asia() ) {
 				return $dhl_obj->get_api_url();	
-            } elseif( $dhl_obj->is_dhl_ecs_us() ) {
-				return $dhl_obj->get_api_url();
-            } elseif( $dhl_obj->is_dhl_deutsche_post() ) {
-			    return $dhl_obj->get_api_url();
             }
-
 
 		} catch (Exception $e) {
 			throw new Exception('Cannot get DHL api credentials!');
@@ -459,15 +369,9 @@ class PR_DHL_WC {
 		try {
 			$dhl_obj = $this->get_dhl_factory();
 
-			if( $dhl_obj->is_dhl_paket() ) {
-				$dhl_settings = get_option('woocommerce_pr_dhl_paket_settings');
-			} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+			if( $dhl_obj->is_dhl_ecs_asia() ) {
 				$dhl_settings = $dhl_obj->get_settings();
-			} elseif ( $dhl_obj->is_dhl_ecs_us() ) {
-			    $dhl_settings = $dhl_obj->get_settings();
-            } elseif ( $dhl_obj->is_dhl_deutsche_post() ) {
-			    $dhl_settings = $dhl_obj->get_settings();
-            }
+			}
 
 		} catch (Exception $e) {
 			throw $e;
@@ -484,18 +388,10 @@ class PR_DHL_WC {
 
 			$dhl_obj = $this->get_dhl_factory();
 
-			if( $dhl_obj->is_dhl_paket() ) {
-				$api_user = $shipping_dhl_settings['dhl_api_user']; 
-				$api_pwd = $shipping_dhl_settings['dhl_api_pwd'];
-			} elseif( $dhl_obj->is_dhl_ecs_asia() ) {
+			if( $dhl_obj->is_dhl_ecs_asia() ) {
 				list($api_user, $api_pwd) = $dhl_obj->get_api_creds();
-			} elseif( $dhl_obj->is_dhl_ecs_us() ) {
-				list($api_user, $api_pwd) = $dhl_obj->get_api_creds();
-			} elseif( $dhl_obj->is_dhl_deutsche_post() ) {
-			    list($api_user, $api_pwd) = $dhl_obj->get_api_creds();
 			} else {
 				throw new Exception( __('Country not supported', 'dhl-for-woocommerce') );
-
 			}
 
 			$connection = $dhl_obj->dhl_test_connection( $api_user, $api_pwd );
@@ -561,53 +457,9 @@ class PR_DHL_WC {
 		}
 
 		ob_start();
-		echo '<img src="'.plugin_dir_url(__FILE__).'lib/barcode.php?text='.$text.'&size='.$size.'" alt="barcode"/>';
+		echo '<img src="'.plugin_dir_url(__FILE__).'lib/barcode.php?text='.esc_html( $text ).'&size='.esc_html( $size ).'" alt="barcode"/>';
 		$view = ob_get_clean();
 	    return $view;
-	}
-
-	public function get_dhl_preferred_day_time( $postcode ) {
-
-		try {
-
-		  $shipping_dhl_settings = $this->get_shipping_dhl_settings();
-		  $dhl_obj = $this->get_dhl_factory();
-
-		} catch (Exception $e) {
-		    return;
-		}
-
-		if( ! $dhl_obj->is_dhl_paket() ) {
-		  return;
-		}
-
-		if ( ! isset( $shipping_dhl_settings['dhl_account_num'] ) ) {
-			return;
-		}
-
-		$exclusion_work_day = array( );
-		$work_days = array(
-		            'Mon' => 'mon',
-		            'Tue' => 'tue',
-		            'Wed' => 'wed',
-		            'Thu' => 'thu',
-		            'Fri' => 'fri',
-		            'Sat' => 'sat');
-
-		foreach ($work_days as $key => $value) {
-			$exclusion_day = 'dhl_preferred_exclusion_' . $value;
-
-			if( isset($shipping_dhl_settings[ $exclusion_day ]) && $shipping_dhl_settings[ $exclusion_day ] == 'yes' ) {
-			  $exclusion_work_day[ $key ] = $value;
-			}
-		}
-
-		$cutoff_time = '12';
-		if( ! empty( $shipping_dhl_settings[ 'dhl_preferred_day_cutoff' ] ) ) {
-			$cutoff_time = $shipping_dhl_settings[ 'dhl_preferred_day_cutoff' ];
-		}
-
-		return $dhl_obj->get_dhl_preferred_day_time( $postcode, $shipping_dhl_settings['dhl_account_num'], $cutoff_time, $exclusion_work_day );
 	}
 
 
@@ -657,36 +509,6 @@ class PR_DHL_WC {
 
 	public function get_eu_iso2() {
 		return $this->eu_iso2;
-	}
-
-	public function is_packstation( $string )	{
-		$pos_ps = stripos( $string, PR_DHL_PACKSTATION );
-
-		if( $pos_ps !== false ) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public function is_parcelshop( $string )	{
-		$pos_ps = stripos( $string, PR_DHL_PARCELSHOP );
-
-		if( $pos_ps !== false ) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public function is_post_office( $string )	{
-		$pos_ps = stripos( $string, PR_DHL_POST_OFFICE );
-
-		if( $pos_ps !== false ) {
-			return true;
-		} else {
-			return false;
-		}
 	}
 
 	/**

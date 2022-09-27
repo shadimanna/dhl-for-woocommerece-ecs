@@ -109,7 +109,7 @@ abstract class PR_DHL_WC_Product {
 				<span class="input-text-wrap">
 					<select class="change_dhl_manufacture_country change_to" name="change_dhl_manufacture_country">
 					<?php foreach( $countries as $value => $text ){ ?>
-						<option value="<?php echo esc_attr( $value ); ?>"><?php echo $text; ?></option>
+						<option value="<?php echo esc_attr( $value ); ?>"><?php echo esc_html( $text ); ?></option>
 					<?php } ?>
 					</select>
 				</span>

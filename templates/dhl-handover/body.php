@@ -24,7 +24,7 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
       <h1><?php echo __("Handover Note", 'pr-shipping-dhl'); ?></h1>
     </div>
     <div class="header-barcode">
-      <p><?php echo $handover_id; ?></p>
+      <p><?php echo esc_html( $handover_id ); ?></p>
       <?php echo PR_DHL()->generate_barcode( $handover_id ); ?>
     </div>
   </header>
@@ -37,13 +37,13 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
 
       <div class="sub-section">
         <div class="name"><?php echo __("Pick-up Name", 'pr-shipping-dhl'); ?></div>
-        <div class="box"><?php echo $shipping_dhl_settings['dhl_pickup_name']; ?></div>
+        <div class="box"><?php echo esc_html( $shipping_dhl_settings['dhl_pickup_name'] ); ?></div>
       </div>
 
       <div class="sub-section">
         <div class="name"><?php echo __("Account No", 'pr-shipping-dhl'); ?></div>
         <div>
-          <p><?php echo $shipping_dhl_settings['dhl_pickup']; ?></p>
+          <p><?php echo esc_html( $shipping_dhl_settings['dhl_pickup'] ); ?></p>
            <?php echo PR_DHL()->generate_barcode( $shipping_dhl_settings['dhl_pickup'] ); ?>
         </div>
       </div>
@@ -71,11 +71,11 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
         <div class="row-title"><?php echo __("Total", 'pr-shipping-dhl'); ?></div>
         <div class="item">
           <p><?php echo __("No. of items", 'pr-shipping-dhl'); ?></p>
-          <div class="box"><?php echo $items_qty; ?></div>
+          <div class="box"><?php echo esc_html( $items_qty ); ?></div>
         </div>
         <div class="item">
           <p><?php echo sprintf( __( 'Weight (%s)', 'pr-shipping-dhl' ), $weight_units); ?></p>
-          <div class="box"><?php echo $total_weight; ?></div>
+          <div class="box"><?php echo esc_html( $total_weight ); ?></div>
         </div>
         <div class="item">
           <p><?php echo __("No. of Receptacles", 'pr-shipping-dhl'); ?></p>
@@ -95,7 +95,7 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
         </div>
         <div class="dist-item">
           <p><?php echo __("DHL Distribution centre"); ?></p>
-          <div class="box"><?php echo $shipping_dhl_settings['dhl_distribution']; ?></div>
+          <div class="box"><?php echo esc_html( $shipping_dhl_settings['dhl_distribution'] ); ?></div>
         </div>
       </div>
 
@@ -116,7 +116,7 @@ $date = $t["mday"] . "-" . $t["month"] . "-" . $t["year"] . " " . $t["hours"] . 
       <div class="sub-section">
         <div><?php echo __("Signature", 'pr-shipping-dhl'); ?></div>
         <div><?php //echo __("UBI Logistics (China)", 'pr-shipping-dhl'); ?></div>
-        <div><?php echo __("Date", 'pr-shipping-dhl'); ?> <?php echo $date; ?></div>
+        <div><?php echo __("Date", 'pr-shipping-dhl') . esc_html( $date ); ?></div>
       </div>
     </div>
   </section>

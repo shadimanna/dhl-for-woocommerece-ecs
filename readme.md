@@ -1,12 +1,12 @@
-=== DHL for WooCommerce eCS ===
+=== DHL for WooCommerce eCS Asia ===
 
-* Contributors: DHL, shadim, utzfu
+* Contributors: DHL, shadim
 * Donate link: 
 * Tags: DHL, original DHL, DHL, eCommerce, DHL Asia, DHL US, WooCommerce, Woocom, Woo Commerce, Shipping, shiping, label creation, label printing
 * Requires at least: 4.1
 * Requires PHP: 5.6
 * Tested up to: 6.0
-* Stable tag: 1.0.1
+* Stable tag: 1.0.0
 * WC requires at least: 3.0
 * WC tested up to: 6.9
 * License: GPLv2 or later
@@ -44,9 +44,6 @@ Click [here](www.dhl.com/faqs) for our FAQs or check out our [integration page](
 
 
 == Changelog ==
-
-= 1.0.1 =
-* Fix Asia loading
 
 = 1.0 =
 * First public release
