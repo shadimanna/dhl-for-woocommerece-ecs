@@ -6,7 +6,7 @@
 * Requires at least: 4.1
 * Requires PHP: 5.6
 * Tested up to: 6.0
-* Stable tag: 1.0.0
+* Stable tag: 1.1.0
 * WC requires at least: 3.0
 * WC tested up to: 6.9
 * License: GPLv2 or later
@@ -44,6 +44,10 @@ Click [here](www.dhl.com/faqs) for our FAQs or check out our [integration page](
 
 
 == Changelog ==
+
+= 1.1.0 =
+* Add - Send company name to the REST API.
+* Fix - JSON decode fatal error.
 
 = 1.0.0 =
 * First public release

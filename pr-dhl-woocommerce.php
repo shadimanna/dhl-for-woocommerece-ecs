@@ -5,11 +5,11 @@
  * Description: WooCommerce integration for DHL eCommerce US & Asia
  * Author: DHL
  * Author URI: http://dhl.com/woocommerce
- * Version: 1.0.0
+ * Version: 1.1.0
  * Text Domain: dhl-for-woocommerce
  * Domain Path: /lang
  * WC requires at least: 3.0
- * WC tested up to: 5.6
+ * WC tested up to: 7.5
  * Requires at least: 4.6
  *
  * This program is free software: you can redistribute it and/or modify
@@ -35,7 +35,7 @@ if ( ! class_exists( 'PR_DHL_WC' ) ) :
 
 class PR_DHL_WC {
 
-	private $version = "1.0.0";
+	private $version = "1.1.0";
 
 	/**
 	 * Instance to call certain functions globally within the plugin
