@@ -177,7 +177,20 @@ class Auth implements API_Auth_Interface {
 			throw new RuntimeException( $response->body->error_description );
 		}
 
-		$token_response 	= json_decode( $response->body );
+		if ( is_string( $response->body ) ) {
+			$token_response = json_decode( $response->body );
+		} else {
+			$token_response = $response->body;
+		}
+
+		if ( ! empty( $token_response->accessTokenResponse->responseStatus->messageDetails ) ) {
+			throw new RuntimeException( $token_response->accessTokenResponse->responseStatus->messageDetails );
+		}
+
+		if ( empty( $token_response->accessTokenResponse->token ) ) {
+			throw new RuntimeException( esc_html__( 'There is no valid token in the response.', 'dhl-for-woocommerce' ) );
+		}
+
 		return $token_response->accessTokenResponse;
 	}
 
