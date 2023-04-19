@@ -353,6 +353,10 @@ class Item_Info {
 					return $self->string_length_sanitization( $phone, 15 );
 				}
 			),
+			'company'   => array(
+				'default' => '',
+				'rename'  => 'companyName',
+			),
 			'email'     => array(
 				'default' => '',
 			),
