@@ -9,12 +9,7 @@ class PR_DHL_API_Factory {
 
 	public static function init() {
 		// Load abstract classes
-		include_once( 'abstract-pr-dhl-api-rest.php' );
-		include_once( 'abstract-pr-dhl-api-soap.php' );
 		include_once( 'abstract-pr-dhl-api.php' );
-
-		// Load interfaces
-		include_once( 'interface-pr-dhl-api-label.php' );
 	}
 
 	public static function make_dhl( $country_code ) {
