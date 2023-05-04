@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7c75a445dfb7b142c2c8ee98848419bf
+class ComposerStaticInitf157335b37588c2d91df9d32b4934c2d
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
@@ -22,14 +22,27 @@ class ComposerStaticInit7c75a445dfb7b142c2c8ee98848419bf
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PR\\DHL\\REST_API\\API_Client' => __DIR__ . '/../..' . '/includes/REST_API/API_Client.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Auth' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Auth.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Client' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Client.php',
+        'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Item_Info' => __DIR__ . '/../..' . '/includes/REST_API/DHL_eCS_Asia/Item_Info.php',
+        'PR\\DHL\\REST_API\\Drivers\\JSON_API_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/JSON_API_Driver.php',
+        'PR\\DHL\\REST_API\\Drivers\\Logging_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/Logging_Driver.php',
+        'PR\\DHL\\REST_API\\Drivers\\WP_API_Driver' => __DIR__ . '/../..' . '/includes/REST_API/Drivers/WP_API_Driver.php',
+        'PR\\DHL\\REST_API\\Interfaces\\API_Auth_Interface' => __DIR__ . '/../..' . '/includes/REST_API/Interfaces/API_Auth_Interface.php',
+        'PR\\DHL\\REST_API\\Interfaces\\API_Driver_Interface' => __DIR__ . '/../..' . '/includes/REST_API/Interfaces/API_Driver_Interface.php',
+        'PR\\DHL\\REST_API\\Request' => __DIR__ . '/../..' . '/includes/REST_API/Request.php',
+        'PR\\DHL\\REST_API\\Response' => __DIR__ . '/../..' . '/includes/REST_API/Response.php',
+        'PR\\DHL\\REST_API\\URL_Utils' => __DIR__ . '/../..' . '/includes/REST_API/URL_Utils.php',
+        'PR\\DHL\\Utils\\Args_Parser' => __DIR__ . '/../..' . '/includes/Utils/Args_Parser.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7c75a445dfb7b142c2c8ee98848419bf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7c75a445dfb7b142c2c8ee98848419bf::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7c75a445dfb7b142c2c8ee98848419bf::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf157335b37588c2d91df9d32b4934c2d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf157335b37588c2d91df9d32b4934c2d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf157335b37588c2d91df9d32b4934c2d::$classMap;
 
         }, null, ClassLoader::class);
     }

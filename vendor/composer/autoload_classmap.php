@@ -7,4 +7,17 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'PR\\DHL\\REST_API\\API_Client' => $baseDir . '/includes/REST_API/API_Client.php',
+    'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Auth' => $baseDir . '/includes/REST_API/DHL_eCS_Asia/Auth.php',
+    'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Client' => $baseDir . '/includes/REST_API/DHL_eCS_Asia/Client.php',
+    'PR\\DHL\\REST_API\\DHL_eCS_Asia\\Item_Info' => $baseDir . '/includes/REST_API/DHL_eCS_Asia/Item_Info.php',
+    'PR\\DHL\\REST_API\\Drivers\\JSON_API_Driver' => $baseDir . '/includes/REST_API/Drivers/JSON_API_Driver.php',
+    'PR\\DHL\\REST_API\\Drivers\\Logging_Driver' => $baseDir . '/includes/REST_API/Drivers/Logging_Driver.php',
+    'PR\\DHL\\REST_API\\Drivers\\WP_API_Driver' => $baseDir . '/includes/REST_API/Drivers/WP_API_Driver.php',
+    'PR\\DHL\\REST_API\\Interfaces\\API_Auth_Interface' => $baseDir . '/includes/REST_API/Interfaces/API_Auth_Interface.php',
+    'PR\\DHL\\REST_API\\Interfaces\\API_Driver_Interface' => $baseDir . '/includes/REST_API/Interfaces/API_Driver_Interface.php',
+    'PR\\DHL\\REST_API\\Request' => $baseDir . '/includes/REST_API/Request.php',
+    'PR\\DHL\\REST_API\\Response' => $baseDir . '/includes/REST_API/Response.php',
+    'PR\\DHL\\REST_API\\URL_Utils' => $baseDir . '/includes/REST_API/URL_Utils.php',
+    'PR\\DHL\\Utils\\Args_Parser' => $baseDir . '/includes/Utils/Args_Parser.php',
 );
