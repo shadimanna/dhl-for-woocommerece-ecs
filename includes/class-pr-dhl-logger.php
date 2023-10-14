@@ -1,10 +1,12 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH'))
+{
 	exit;
 } // Exit if accessed directly
 
-class PR_DHL_Logger {
+class PR_DHL_Logger
+{
 
 	/**
 	 * @var String
@@ -16,7 +18,8 @@ class PR_DHL_Logger {
 	 *
 	 * @param WC_XR_debug $debug
 	 */
-	public function __construct( $debug ) {
+	public function __construct($debug)
+	{
 		$this->debug = $debug;
 	}
 
@@ -25,10 +28,12 @@ class PR_DHL_Logger {
 	 *
 	 * @return bool
 	 */
-	public function is_enabled() {
+	public function is_enabled()
+	{
 
 		// Check if debug is on
-		if ( 'yes' === $this->debug ) {
+		if ('yes' === $this->debug)
+		{
 			return true;
 		}
 
@@ -40,21 +45,23 @@ class PR_DHL_Logger {
 	 *
 	 * @param String $message
 	 */
-	public function write( $message ) {
+	public function write($message)
+	{
 
 		// Check if enabled
-		if ( $this->is_enabled() ) {
+		if ($this->is_enabled())
+		{
 
 			// Logger object
 			$wc_logger = new WC_Logger();
 
 			// Add to logger
-			$wc_logger->add( 'DHL', $message );
+			$wc_logger->add('DHL', $message);
 		}
-
 	}
 
-	public function get_log_url() {
+	public function get_log_url()
+	{
 		return admin_url('admin.php?page=wc-status&tab=logs');
 		/*
 		$log_path = wc_get_log_file_path( 'DHL' );
@@ -64,5 +71,4 @@ class PR_DHL_Logger {
 
 		return $log_url;*/
 	}
-
 }

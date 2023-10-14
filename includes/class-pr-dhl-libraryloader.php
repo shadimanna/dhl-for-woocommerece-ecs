@@ -2,13 +2,16 @@
 
 use PR_DHL\lib\PDFMerger\PDFMerger;
 
-if (!defined('ABSPATH')) { 
-    exit; 
+if (!defined('ABSPATH'))
+{
+    exit;
 }
 
-if( !class_exists( 'PR_DHL_Libraryloader' ) ){
+if (!class_exists('PR_DHL_Libraryloader'))
+{
 
-    class PR_DHL_Libraryloader{
+    class PR_DHL_Libraryloader
+    {
 
         const CLASS_PDF_MERGER = 'pdf_merger';
 
@@ -21,7 +24,8 @@ if( !class_exists( 'PR_DHL_Libraryloader' ) ){
         /**
          * Constructor.
          */
-        public function __construct(){
+        public function __construct()
+        {
             // Set paths
             $this->include_path     = PR_DHL_PLUGIN_DIR_PATH . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR;
             $this->file_path        = $this->include_path . 'PDFMerger' . DIRECTORY_SEPARATOR . 'PDFMerger.php';
@@ -32,29 +36,33 @@ if( !class_exists( 'PR_DHL_Libraryloader' ) ){
          * Returns a singleton instance of the called class
          * @return static
          */
-        public static function instance(){
+        public static function instance()
+        {
 
             $class = get_called_class();
-            if (!isset(self::$instances[$class])) {
+            if (!isset(self::$instances[$class]))
+            {
                 self::$instances[$class] = new static();
             }
             return self::$instances[$class];
-            
         }
 
         public function get_pdf_merger()
         {
-            if (!class_exists('PR_DHL\lib\PDFMerger\PDFMerger')) {
+            if (!class_exists('PR_DHL\lib\PDFMerger\PDFMerger'))
+            {
                 $loaded = $this->include_file($this->file_path);
 
-                if (!$loaded) {
+                if (!$loaded)
+                {
                     return null;
                 }
                 $this->loaded[] = self::CLASS_PDF_MERGER;
             }
 
             // Something very unexpected happened, return
-            if (!class_exists('PR_DHL\lib\PDFMerger\PDFMerger')) {
+            if (!class_exists('PR_DHL\lib\PDFMerger\PDFMerger'))
+            {
                 return null;
             }
 
@@ -67,12 +75,15 @@ if( !class_exists( 'PR_DHL_Libraryloader' ) ){
          * @param $path
          * @return bool
          */
-        protected function include_file($path){
-            
-            if (file_exists($path)) {
+        protected function include_file($path)
+        {
+
+            if (file_exists($path))
+            {
                 // Supress errors of third party libraries
                 $status = @include_once $path;
-                if ($status !== 1) {
+                if ($status !== 1)
+                {
                     return false;
                 }
                 return true;
