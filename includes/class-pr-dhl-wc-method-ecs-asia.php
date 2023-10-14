@@ -24,7 +24,11 @@ class PR_DHL_WC_Method_eCS_Asia extends WC_Shipping_Method {
 		$this->id = 'pr_dhl_ecs_asia';
 		$this->instance_id = absint( $instance_id );
 		$this->method_title = __( 'DHL eCS Asia', 'dhl-for-woocommerce' );
-		$this->method_description = sprintf( __( 'To start creating DHL eCommerce shipping labels and return back a DHL Tracking number to your customers, please fill in your user credentials as shown in your contracts provided by DHL. Not yet a customer? Please get a quote %shere%s or find out more on how to set up this plugin and get some more support %shere%s.', 'dhl-for-woocommerce' ), '<a href="https://www.logistics.dhl/global-en/home/our-divisions/ecommerce/integration/contact-ecommerce-integration-get-a-quote.html?cid=referrer_3pv-signup_woocommerce_ecommerce-integration&SFL=v_signup-woocommerce" target="_blank">', '</a>', '<a href="https://www.logistics.dhl/global-en/home/our-divisions/ecommerce/integration/integration-channels/third-party-solutions/woocommerce.html?cid=referrer_docu_woocommerce_ecommerce-integration&SFL=v_woocommerce" target="_blank">', '</a>' );
+		$this->method_description = sprintf(
+		__('To start creating DHL eCommerce shipping labels and provide Tracking Numbers to your customers, please fill in your credentials as shown in your contract provided by DHL.
+			<br />
+			Not yet a customer? Please get a quote %shere%s or if you need support on how to set up this plugin please click %shere%s.', 'dhl-for-woocommerce'
+		), '<a href="https://www.logistics.dhl/global-en/home/our-divisions/ecommerce/integration/contact-ecommerce-integration-get-a-quote.html?cid=referrer_3pv-signup_woocommerce_ecommerce-integration&SFL=v_signup-woocommerce" target="_blank">', '</a>', '<a href="https://www.logistics.dhl/global-en/home/our-divisions/ecommerce/integration/integration-channels/third-party-solutions/woocommerce.html?cid=referrer_docu_woocommerce_ecommerce-integration&SFL=v_woocommerce" target="_blank">', '</a>' );
 
 		$this->init();
 	}
@@ -96,7 +100,7 @@ class PR_DHL_WC_Method_eCS_Asia extends WC_Shipping_Method {
 			'dhl_pickup_dist'     => array(
 				'title'           => __( 'Account', 'dhl-for-woocommerce' ),
 				'type'            => 'title',
-				'description'     => __( 'Please enter your account information underneath.', 'dhl-for-woocommerce' ),
+				'description'     => __( 'Please enter your account information below:', 'dhl-for-woocommerce' ),
 				'class'			  => '',
 			),
 			'dhl_pickup_id' => array(
@@ -237,7 +241,7 @@ class PR_DHL_WC_Method_eCS_Asia extends WC_Shipping_Method {
 			'dhl_api'           => array(
 				'title'           => __( 'API Settings', 'dhl-for-woocommerce' ),
 				'type'            => 'title',
-				'description'     => __( 'Please configure your access towards the DHL eCommerce APIs by means of authentication.', 'dhl-for-woocommerce' ),
+				'description'     => __( 'Please enter your DHL eCommerce API credentials:', 'dhl-for-woocommerce' ),
 				'class'			  => '',
 			),
 			'dhl_api_key' => array(
@@ -281,7 +285,7 @@ class PR_DHL_WC_Method_eCS_Asia extends WC_Shipping_Method {
             'dhl_shipper'           => array(
                 'title'           => __( 'Pickup / Shipper Address', 'dhl-for-woocommerce' ),
                 'type'            => 'title',
-                'description'     => __( 'Enter Pickup & Shipper Address below.  This is used for Shipper Address with Tax ID and for the "Pickup Address" for the "DHL Parcel Metro" product.', 'dhl-for-woocommerce' ),
+                'description'     => __( 'Enter a Pickup & Shipper Address below (this is used as the Shipper Address with Tax ID as well as for the "Pickup Address" via "DHL Parcel Metro" product):', 'dhl-for-woocommerce' ),
             ),
             'dhl_contact_name' => array(
                 'title'             => __( 'Name', 'dhl-for-woocommerce' ),
@@ -367,7 +371,7 @@ class PR_DHL_WC_Method_eCS_Asia extends WC_Shipping_Method {
 			'dhl_shipper_tax_info'           => array(
                 'title'           => __( 'Shipper Tax ID Defaults', 'dhl-for-woocommerce' ),
                 'type'            => 'title',
-                'description'     => __( 'Enter the default Tax ID info below. ', 'dhl-for-woocommerce' ),
+                'description'     => __( 'Enter the default Tax ID below: ', 'dhl-for-woocommerce' ),
             ),
 			'dhl_shipper_tax_id_type' => array(
                 'title'             => __( 'Shipper Tax ID Type', 'dhl-for-woocommerce' ),

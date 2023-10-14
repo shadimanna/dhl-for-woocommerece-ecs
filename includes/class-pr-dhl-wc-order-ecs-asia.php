@@ -85,7 +85,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 
         woocommerce_wp_textarea_input( array(
             'id'          		=> 'pr_dhl_description',
-            'label'       		=> __( 'Package description for customs (50 characters max): ', 'dhl-for-woocommerce' ),
+            'label'       		=> __( 'Customs Description (50 chars. max): ', 'dhl-for-woocommerce' ),
             'placeholder' 		=> '',
             'description'		=> '',
             'value'       		=> $selected_dhl_desc,
@@ -109,7 +109,7 @@ class PR_DHL_WC_Order_eCS_Asia extends PR_DHL_WC_Order {
 
 		woocommerce_wp_checkbox( array(
 			'id'          		=> 'pr_dhl_additional_insurance',
-			'label'       		=> __( 'Additional Insurance:', 'dhl-for-woocommerce' ),
+			'label'       		=> __( 'Additional Insurance: ', 'dhl-for-woocommerce' ),
 			'placeholder' 		=> '',
 			'description'		=> '',
 			'value'       		=> isset( $dhl_label_items['pr_dhl_additional_insurance'] ) ? $dhl_label_items['pr_dhl_additional_insurance'] : $this->shipping_dhl_settings['dhl_default_additional_insurance'],

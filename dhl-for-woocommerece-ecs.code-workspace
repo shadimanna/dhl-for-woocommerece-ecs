@@ -1,8 +1,23 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": ".",
+      "files.eol": "\r\n" // force CRLF formatting (carriage return + line feed)
+    }
+  ],
+
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    "intelephense.format.braces": "allman", // https://emacs-lsp.github.io/lsp-mode/page/lsp-intelephense/
+    "cSpell.language": "en-GB", // Australian/UK spelling
+
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true
+    }
+  }
 }

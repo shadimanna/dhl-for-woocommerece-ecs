@@ -173,7 +173,7 @@ abstract class PR_DHL_WC_Order {
 			// Get weight UoM and add in label
 			woocommerce_wp_text_input( array(
 				'id'          		=> 'pr_dhl_weight',
-				'label'       		=> sprintf( __( 'Estimated shipment weight (%s) based on items ordered: ', 'dhl-for-woocommerce' ), $weight_units),
+				'label'       		=> sprintf( __( 'Estimated Shipment Weight in %s\'s: ', 'dhl-for-woocommerce' ), toupper($weight_units)),
 				'placeholder' 		=> '',
 				'description'		=> '',
 				'value'       		=> $selected_weight_val,

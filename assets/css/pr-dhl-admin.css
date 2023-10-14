@@ -6,12 +6,12 @@
 
 span.wc_dhl_delete,
 span.wc_dhl_error {
-	float:right;
+	float: right;
 }
 
-ul.wc_dhl_error{
+ul.wc_dhl_error {
 	list-style-type: disc;
-	padding-left:20px;
+	padding-left: 20px;
 }
 
 .dhl_connection_succeeded {
@@ -27,7 +27,7 @@ ul.wc_dhl_error{
 }
 
 #dhl_label_created {
-	width:7%;
+	width: 7%;
 	/*text-align:center*/
 }
 
@@ -55,46 +55,51 @@ ul.wc_dhl_error{
 }
 
 #pr_dhl_dp_error {
-    color: red;
+	color: red;
 }
 
 #woocommerce-shipment-dhl-label,
 #woocommerce-dhl-dp-order {
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(50%,#fc0),to(rgba(255,204,0,0)));
-	background-image: linear-gradient(#fc0 50%,rgba(255,204,0,0));
+	/*background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(50%, #fc0),
+		to(rgba(255, 204, 0, 0))
+	);*/
+
+	/*background-image: linear-gradient(#fc0 50%, rgba(255, 204, 0, 0));
 	background-size: auto 36px;
-	background-repeat:repeat-x;
+	background-repeat: repeat-x;*/
 }
 
-
 .dhl-total-packages #pr_dhl_total_packages {
-  width: 100px !important;
-  margin-top: -7px;
-  margin-left: 5px;
+	width: 100px !important;
+	margin-top: -7px;
+	margin-left: 5px;
 }
 
 p.dhl-total-packages > label {
-  padding-bottom: 10px !important;
-} 
+	padding-bottom: 10px !important;
+}
 
 .package_header_field,
 .package_item_field {
-  display: inline-block;
-  width: 45px !important;
+	display: inline-block;
+	width: 45px !important;
 }
 
 .package_header_field.first,
 .package_item_field.first {
-  width: 55px !important;
+	width: 55px !important;
 }
 
 .package_item input {
 	width: 40px !important;
 }
 
-.dhl-awb-filter-container{
-	clear:both;
-	margin-top:9px;
-	margin-bottom:9px;
-
+.dhl-awb-filter-container {
+	clear: both;
+	margin-top: 9px;
+	margin-bottom: 9px;
 }
