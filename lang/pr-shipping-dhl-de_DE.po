@@ -2780,7 +2780,7 @@ msgstr "Konto-Nr."
 #: includes/class-pr-dhl-wc-method-ecs-asia.php:93
 #, fuzzy
 #| msgid "Please configure your shipping parameters underneath."
-msgid "Please enter your account information underneath."
+msgid "Please enter your account information below:"
 msgstr "Konfigurieren Sie nachfolgend Ihre Versandparameter."
 
 #: includes/class-pr-dhl-wc-method-ecs-asia.php:97
